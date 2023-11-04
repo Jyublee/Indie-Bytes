@@ -1,0 +1,143 @@
+.checkbox-container {
+    height: 100px;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px; /* Add margin to create vertical spacing */
+}
+
+
+.checkbox-wrapper-2 .ikxBAC {
+appearance: none;
+background-color: #dfe1e4;
+border-radius: 72px;
+border-style: none;
+flex-shrink: 0;
+height: 20px;
+margin: 0;
+position: relative;
+width: 30px;
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+bottom: -6px;
+content: "";
+left: -6px;
+position: absolute;
+right: -6px;
+top: -6px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after 
+{
+background-color: #fff;
+border-radius: 50%;
+content: "";
+height: 14px;
+left: 3px;
+position: absolute;
+top: 3px;
+width: 14px;
+}
+
+.checkbox-wrapper-2 input[type=checkbox] {
+cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+background-color: #c9cbcd;
+transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+background-color: #6e79d6;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+background-color: #fff;
+left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+background-color: #535db3;
+}
+
+.checkbox-wrapper-2 label {
+    font-size: 26px; /* Adjust the font size to your preference */
+}
+
+/* CSS */
+.button-19 {
+  margin-left: 360px;
+  width: 200px; /* Adjust the width as needed */
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}

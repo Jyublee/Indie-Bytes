@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Dark background color */
+}
+
+header {
+    background-color: #030303; /* Header background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust the image size as needed */
+    height: auto;
+    margin-right: 10px; /* Add spacing between the image and text */
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.half {
+    width: 50%; /* Each element takes up 50% of the available width */
+    float: left;
+    height: 100vh; /* 100% of the viewport height */
+    text-align: center;
+    border: 2px solid white; /* Add a white border */
+    box-sizing: border-box; /* Include border width in element width */
+}
+
+.half:nth-child(odd) {
+    background-color: #000000; /* Color for the left element */
+}
+
+.half:nth-child(even) {
+    background-color: #000000; /* Color for the right element */
+}
+
+/* You can style the content within each .half as desired */
+.content {
+    color: #fff; /* Text color */
+}

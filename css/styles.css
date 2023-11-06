@@ -1,3 +1,30 @@
+html {	
+	--u: 1.5vmin;
+	--c1: #363636;
+	--c2: #2b2b2b;
+	--c3: #1e1e1e;
+	--c4: #121212;
+	--c5: #050505;
+	--gp: 50%/calc(var(--u) * 10) calc(var(--u) * 17.67);
+	height: 100vh;
+	background: 
+		conic-gradient(from 90deg at 99% 67%, var(--c5) 0 90deg, #fff0 0 360deg) var(--gp), 
+		conic-gradient(from 180deg at 1% 67%, var(--c5) 0 90deg, #fff0 0 360deg) var(--gp), 
+		conic-gradient(from 0deg at 99% 33%, var(--c5) 0 90deg, #fff0 0 360deg) var(--gp), 
+		conic-gradient(from -90deg at 1% 33%, var(--c5) 0 90deg, #fff0 0 360deg) var(--gp), 
+		conic-gradient(from -60deg at 50% 15.5%, var(--c3) 0 120deg, #fff0 0 360deg) var(--gp), 
+		conic-gradient(from -60deg at 50% 16.75%, var(--c5) 0 120deg, #fff0 0 360deg) var(--gp), 
+		conic-gradient(from 120deg at 50% 83.25%, var(--c5) 0 120deg, #fff0 0 360deg) var(--gp), 
+		linear-gradient(32deg, #fff0 0 49.5%, var(--c5) 0 50.5%, #fff0 0 100%) var(--gp),
+		linear-gradient(-32deg, #fff0 0 49.5%, var(--c5) 0 50.5%, #fff0 0 100%) var(--gp),
+		linear-gradient(-90deg, #fff0 0 49%, var(--c5) 0 51%, #fff0 0 100%) var(--gp),
+		linear-gradient(60.5deg, #fff0 0 49.5%, var(--c5) 0 50.5%, #fff0 0 100%) var(--gp),
+		linear-gradient(-60.5deg, #fff0 0 49.5%, var(--c5) 0 50.5%, #fff0 0 100%) var(--gp),
+		conic-gradient(from -90deg at 50% 50%, var(--c5) 0 32deg, var(--c3) 0 60.5deg, var(--c4) 0 90deg, var(--c5) 0 119.5deg, var(--c1) 0 148deg, var(--c5) 0 180deg, #fff0 0 360deg) var(--gp),
+		conic-gradient(from 90deg at 50% 50%, var(--c2) 0 32deg, var(--c4) 0 60.5deg, var(--c3) 0 90deg, var(--c1) 0 119.5deg, var(--c5) 0 148deg, var(--c2) 0 180deg,  #fff0 0 360deg) var(--gp);
+	background-color: var(--c5);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,40 +38,78 @@ header {
     padding: 20px 0;
 }
 
+.content h1 {
+    color: #fff; /* Text color */
+    margin-top: 50px; /* Add margin to move the heading down */
+}
+
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
 }
 
 .logo img {
-    width: 100px; /* Adjust the image size as needed */
+    position: absolute;
+    left: 600px;
+    width: 120px; /* Adjust the image size as needed */
     height: auto;
-    margin-right: 10px; /* Add spacing between the image and text */
 }
 
-.logo h1 {
-    margin: 0;
+.pic1{
+    position: absolute;
+    left: 550px;
+    width: 120px; /* Adjust the image size as needed */
+    height: auto;
+    top: 10px;
 }
 
-.half {
-    width: 50%; /* Each element takes up 50% of the available width */
+.half1 {
+    border-radius: 18px;
+    position: absolute;
+    top: 160px;
+    left: 300px;  
+    width: 400px; /* Each element takes up 50% of the available width */
     float: left;
-    height: 100vh; /* 100% of the viewport height */
+    height: 80vh; /* 100% of the viewport height */
     text-align: center;
     border: 2px solid white; /* Add a white border */
     box-sizing: border-box; /* Include border width in element width */
+    background-color: #000000
 }
 
-.half:nth-child(odd) {
-    background-color: #000000; /* Color for the left element */
-}
-
-.half:nth-child(even) {
-    background-color: #000000; /* Color for the right element */
+.half2 {
+    border-radius: 18px;
+    top: 160px;
+    right: 300px; 
+    position: absolute;
+    width: 800px; /* Each element takes up 50% of the available width */
+    float: left;
+    height: 80vh; /* 100% of the viewport height */
+    text-align: center;
+    border: 2px solid white; /* Add a white border */
+    box-sizing: border-box; /* Include border width in element width */
+    background-color: #000000
 }
 
 /* You can style the content within each .half as desired */
 .content {
     color: #fff; /* Text color */
+}
+
+.outp {
+    border-radius: 18px;
+    position: relative;
+    left: 120px;  
+    width: 550px; /* Each element takes up 50% of the available width */
+    float: left;
+    height: 163px; /* 100% of the viewport height */
+    text-align: left;
+    padding: 10px;
+    border: 2px solid white; /* Add a white border */
+    box-sizing: border-box; /* Include border width in element width */
+    color: white;
+    font-size: 32px;
+    background-color: #000000
 }

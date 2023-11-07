@@ -1,17 +1,17 @@
 arrayOfRecipes = [
-  ['Aloo_Tikki', '100-150', '20-30', 'Flour', 'Oil', 'Potato', 'Spices'],
-  ['Aloo_Pakora', '100-150', '5-10', 'Flour', 'Oil', 'Potato', 'Spices'],
-  ['Aloo_Paratha', '200-300', '20-30', 'Flour', 'Oil', 'Potato', 'Spices'],
-  ['Dahi_Puri', '100-150', '5-10', 'Potatoes', 'Spices', 'Yogurt'],
-  ['Onion_Bhaji', '100-150', '20-30', 'Flour', 'Oil', 'Onion', 'Spices'],
-  ['Onion_Pakora', '100-150', '10-15', 'Flour', 'Oil', 'Onion', 'Spices'],
-  ['Onion_Rings', '150-200', '20-30', 'Flour', 'Oil', 'Onion', 'Spices'],
+  ['Aloo Tikki', '100-150', '20-30', 'Flour', 'Oil', 'Potato', 'Spices'],
+  ['Aloo Pakora', '100-150', '5-10', 'Flour', 'Oil', 'Potato', 'Spices'],
+  ['Aloo Paratha', '200-300', '20-30', 'Flour', 'Oil', 'Potato', 'Spices'],
+  ['Dahi Puri', '100-150', '5-10', 'Potato', 'Spices', 'Yogurt'],
+  ['Onion Bhaji', '100-150', '20-30', 'Flour', 'Oil', 'Onion', 'Spices'],
+  ['Onion Pakora', '100-150', '10-15', 'Flour', 'Oil', 'Onion', 'Spices'],
+  ['Onion Rings', '150-200', '20-30', 'Flour', 'Oil', 'Onion', 'Spices'],
   ['Pakoras', '75-100', '10-15', 'Flour', 'Oil', 'Paneer', 'Spices'],
-  ['Paneer_Bhurji', '275-300', '25-30', 'Onions', 'Paneer', 'Spices'],
-  ['Paneer_Pakora', '150-200', '20-30', 'Flour', 'Oil', 'Paneer', 'Spices'],
-  ['Paneer_Tikka', '200-250', '20-30', 'Paneer', 'Spices', 'Yogurt'],
-  ['Potato_Chaat', '100-150', '15-20', 'Potato', 'Spices', 'Yogurt'],
-  ['Potato_Samosa', '150-250', '30-40', 'Flour', 'Oil', 'Potato', 'Spices']
+  ['Paneer Bhurji', '275-300', '25-30', 'Onions', 'Paneer', 'Spices'],
+  ['Paneer Pakora', '150-200', '20-30', 'Flour', 'Oil', 'Paneer', 'Spices'],
+  ['Paneer Tikka', '200-250', '20-30', 'Paneer', 'Spices', 'Yogurt'],
+  ['Potato Chaat', '100-150', '15-20', 'Potato', 'Spices', 'Yogurt'],
+  ['Potato Samosa', '150-250', '30-40', 'Flour', 'Oil', 'Potato', 'Spices']
 ]
 
 
@@ -44,7 +44,7 @@ function filterRecipes(arrayOfRecipes, sortedCheckedCheckboxNames) {
     const ingredients = new Set(recipe.slice(3));
 
     if (isSubset(new Set(sortedCheckedCheckboxNames), ingredients)) {
-      matchingRecipes.push(recipe.slice(0, 1));
+      matchingRecipes.push(recipe.slice(0, 3));
     }
   }
 
@@ -62,7 +62,6 @@ function isSubset(setA, setB) {
 
 
 findRecipesButton.addEventListener('click', () => {
-  // Convert the Set to an array, sort it, and then convert it back to a Set
   const sortedCheckedCheckboxNames = Array.from(checkedCheckboxNames).sort();
   
   const matchingRecipes = filterRecipes(arrayOfRecipes, sortedCheckedCheckboxNames);
@@ -71,10 +70,12 @@ findRecipesButton.addEventListener('click', () => {
 
     if (outpElement) {
       if (i <= matchingRecipes.length) {
-        const recipeData = matchingRecipes[i - 1];
-        outpElement.textContent = recipeData.join(' ');
+        const recipeData = matchingRecipes[i - 1][0];
+        const recipeCal = matchingRecipes[i - 1][1];
+        const recipeMin = matchingRecipes[i - 1][2];
+        outpElement.innerHTML = `${recipeData}<br>Calories: ${recipeCal} Cals<br>Cooking Time: ${recipeMin} Mins`;
       } else {
-        outpElement.textContent = '';
+        outpElement.textContent = 'No More Recipes (T___T)';
       }
     }
   }

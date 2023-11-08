@@ -1,11 +1,11 @@
 .checkbox-container {
+    display: flex;
     position: flex;
     height: 100px;
     display: grid;
-    flex-wrap: wrap;
-    gap: 50px;
+    gap: 45px;
     align-items: center;
-    margin-top: 50px; /* Add margin to create vertical spacing */
+    margin-top: 50px; 
 }
 
 
@@ -74,7 +74,7 @@ background-color: #535db3;
 }
 
 .checkbox-wrapper-2 label {
-    font-size: 26px; /* Adjust the font size to your preference */
+    font-size: 26px; 
 }
 
 .button-container {
@@ -83,7 +83,6 @@ background-color: #535db3;
   align-items: center;
 }
 
-/* CSS */
 .button-19 {
   position: relative;
   appearance: button;

@@ -1,9 +1,9 @@
 .checkbox-container {
     display: flex;
     position: flex;
-    height: 100px;
+    height: auto;
     display: grid;
-    gap: 45px;
+    gap: 30px;
     align-items: center;
     margin-top: 50px; 
 }

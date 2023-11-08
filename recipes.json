@@ -42,22 +42,10 @@
         "ingredients": ["Flour", "Oil", "Onion", "Spices"]
     },
     {
-        "name": "Pakoras",
-        "calories": "75-100",
-        "cookingTime": "10-15",
-        "ingredients": ["Flour", "Oil", "Paneer", "Spices"]
-    },
-    {
         "name": "Paneer Bhurji",
         "calories": "275-300",
         "cookingTime": "25-30",
         "ingredients": ["Onions", "Paneer", "Spices"]
-    },
-    {
-        "name": "Paneer Pakora",
-        "calories": "150-200",
-        "cookingTime": "20-30",
-        "ingredients": ["Flour", "Oil", "Paneer", "Spices"]
     },
     {
         "name": "Paneer Tikka",

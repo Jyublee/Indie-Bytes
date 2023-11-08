@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Aloo Tikki",
+        "calories": "100-150",
+        "cookingTime": "20-30",
+        "ingredients": ["Flour", "Oil", "Potato", "Spices"]
+    },
+    {
+        "name": "Aloo Pakora",
+        "calories": "100-150",
+        "cookingTime": "5-10",
+        "ingredients": ["Flour", "Oil", "Potato", "Spices"]
+    },
+    {
+        "name": "Aloo Paratha",
+        "calories": "200-300",
+        "cookingTime": "20-30",
+        "ingredients": ["Flour", "Oil", "Potato", "Spices"]
+    },
+    {
+        "name": "Dahi Puri",
+        "calories": "100-150",
+        "cookingTime": "5-10",
+        "ingredients": ["Potato", "Spices", "Yogurt"]
+    },
+    {
+        "name": "Onion Bhaji",
+        "calories": "100-150",
+        "cookingTime": "20-30",
+        "ingredients": ["Flour", "Oil", "Onion", "Spices"]
+    },
+    {
+        "name": "Onion Pakora",
+        "calories": "100-150",
+        "cookingTime": "10-15",
+        "ingredients": ["Flour", "Oil", "Onion", "Spices"]
+    },
+    {
+        "name": "Onion Rings",
+        "calories": "150-200",
+        "cookingTime": "20-30",
+        "ingredients": ["Flour", "Oil", "Onion", "Spices"]
+    },
+    {
+        "name": "Pakoras",
+        "calories": "75-100",
+        "cookingTime": "10-15",
+        "ingredients": ["Flour", "Oil", "Paneer", "Spices"]
+    },
+    {
+        "name": "Paneer Bhurji",
+        "calories": "275-300",
+        "cookingTime": "25-30",
+        "ingredients": ["Onions", "Paneer", "Spices"]
+    },
+    {
+        "name": "Paneer Pakora",
+        "calories": "150-200",
+        "cookingTime": "20-30",
+        "ingredients": ["Flour", "Oil", "Paneer", "Spices"]
+    },
+    {
+        "name": "Paneer Tikka",
+        "calories": "200-250",
+        "cookingTime": "20-30",
+        "ingredients": ["Paneer", "Spices", "Yogurt"]
+    },
+    {
+        "name": "Potato Chaat",
+        "calories": "100-150",
+        "cookingTime": "15-20",
+        "ingredients": ["Potato", "Spices", "Yogurt"]
+    },
+    {
+        "name": "Potato Samosa",
+        "calories": "150-250",
+        "cookingTime": "30-40",
+        "ingredients": ["Flour", "Oil", "Potato", "Spices"]
+    },
+    {
+        "name": "Aloo Paneer Tikki",
+        "calories": "250-300",
+        "cookingTime": "25-30",
+        "ingredients": ["Flour", "Paneer", "Potato", "Spices"]
+    },
+    {
+        "name": "Paneer Pakoras",
+        "calories": "150-200",
+        "cookingTime": "15-20",
+        "ingredients": ["Flour", "Paneer", "Spices"]
+    },
+    {
+        "name": "Spicy Potato Wedges",
+        "calories": "100-150",
+        "cookingTime": "10-15",
+        "ingredients": ["Oil", "Potato", "Spices"]
+    },
+    {
+        "name": "Spiced Potato Salad",
+        "calories": "75-100",
+        "cookingTime": "5-10",
+        "ingredients": ["Potato", "Oil", "Spices"]
+    },
+    {
+        "name": "Spiced Paneer Salad",
+        "calories": "100-125",
+        "cookingTime": "5-10",
+        "ingredients": ["Paneer", "Oil", "Spices"]
+    }
+]

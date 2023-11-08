@@ -39,6 +39,7 @@ body {
     padding: 0; 
   }
 
+  
 .content h1 {
     color: #fff; 
     margin-top: 50px; 
@@ -59,7 +60,7 @@ body {
 .halfcontainer {
     display: flex;
     justify-content: center; 
-    gap: 20px; 
+    gap: 50px; 
     align-items: center; 
     margin: 20px auto; 
     background-color: transparent; 
@@ -67,23 +68,25 @@ body {
 
 .half1 {
     border-radius: 18px;
-    width: 400px;
-    height: 80vh;
+    width: 20%;
+    height: 70vh;
     text-align: center;
     border: 2px solid white;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #030303;
 }
 
 .half2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 18px;
-    width: 800px;
-    height: 80vh;
+    width: 35%;
+    height: 70vh;
     text-align: center;
     border: 2px solid white;
     box-sizing: border-box;
-    background-color: #000000;
-    margin-left: 20px; 
+    background-color: #030303;
 }
 
 
@@ -98,21 +101,23 @@ body {
     flex-direction: column;
     justify-content: center;
     left: 120px;  
-    width: 550px; 
+    width: 63%; 
     float: left;
-    height: 163px; 
+    height: 13vh; 
+    padding-left: 4%;
     text-align: left;
-    padding: 10px;
     border: 2px solid white; 
     box-sizing: border-box; 
     color: white;
-    font-size: 32px;
-    background-color: #000000
+    font-size: 24px;
+    background-color: #030303
 }
 
 .halfcontainer2 {
-    margin-top: 40px;
+    flex: 1; /* Use flex property to occupy available space */
+    padding: 4%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 60px; /* Adjust the gap size to your preference */
+    gap: 40px; /* Adjust the gap size to your preference */
   }

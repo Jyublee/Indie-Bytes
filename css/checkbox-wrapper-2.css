@@ -3,7 +3,7 @@
     position: flex;
     height: auto;
     display: grid;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     margin-top: 50px; 
 }

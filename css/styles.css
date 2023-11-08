@@ -27,16 +27,21 @@ html {
 
 header {
     position: relative;
-    width: 100 auto; /* Use 100% width to fill the screen horizontally */
+    width: 100 auto; 
     background-color: #030303;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
+body {
+    margin: 0; 
+    padding: 0; 
+  }
+
 .content h1 {
-    color: #fff; /* Text color */
-    margin-top: 50px; /* Add margin to move the heading down */
+    color: #fff; 
+    margin-top: 50px; 
 }
 
 .logo {
@@ -53,11 +58,11 @@ header {
 
 .halfcontainer {
     display: flex;
-    justify-content: center; /* Center the child elements horizontally */
-    gap: 20px; /* Add spacing between the child elements */
-    align-items: center; /* Center the child elements vertically */
-    margin: 10px auto; /* Center the container horizontally and add vertical margin */
-    background-color: transparent; /* Set the background to transparent */
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+    margin: 20px auto; 
+    background-color: transparent; 
 }
 
 .half1 {
@@ -78,25 +83,28 @@ header {
     border: 2px solid white;
     box-sizing: border-box;
     background-color: #000000;
-    margin-left: 20px; /* Add margin to the left to create space between half1 and half2 */
+    margin-left: 20px; 
 }
 
-/* You can style the content within each .half as desired */
+
 .content {
-    color: #fff; /* Text color */
+    color: #fff; 
 }
 
 .outp {
     border-radius: 18px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 120px;  
-    width: 550px; /* Each element takes up 50% of the available width */
+    width: 550px; 
     float: left;
-    height: 163px; /* 100% of the viewport height */
+    height: 163px; 
     text-align: left;
     padding: 10px;
-    border: 2px solid white; /* Add a white border */
-    box-sizing: border-box; /* Include border width in element width */
+    border: 2px solid white; 
+    box-sizing: border-box; 
     color: white;
     font-size: 32px;
     background-color: #000000

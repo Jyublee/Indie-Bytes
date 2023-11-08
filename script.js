@@ -1,19 +1,15 @@
-arrayOfRecipes = [
-  ['Aloo Tikki', '100-150', '20-30', 'Flour', 'Oil', 'Potato', 'Spices'],
-  ['Aloo Pakora', '100-150', '5-10', 'Flour', 'Oil', 'Potato', 'Spices'],
-  ['Aloo Paratha', '200-300', '20-30', 'Flour', 'Oil', 'Potato', 'Spices'],
-  ['Dahi Puri', '100-150', '5-10', 'Potato', 'Spices', 'Yogurt'],
-  ['Onion Bhaji', '100-150', '20-30', 'Flour', 'Oil', 'Onion', 'Spices'],
-  ['Onion Pakora', '100-150', '10-15', 'Flour', 'Oil', 'Onion', 'Spices'],
-  ['Onion Rings', '150-200', '20-30', 'Flour', 'Oil', 'Onion', 'Spices'],
-  ['Pakoras', '75-100', '10-15', 'Flour', 'Oil', 'Paneer', 'Spices'],
-  ['Paneer Bhurji', '275-300', '25-30', 'Onions', 'Paneer', 'Spices'],
-  ['Paneer Pakora', '150-200', '20-30', 'Flour', 'Oil', 'Paneer', 'Spices'],
-  ['Paneer Tikka', '200-250', '20-30', 'Paneer', 'Spices', 'Yogurt'],
-  ['Potato Chaat', '100-150', '15-20', 'Potato', 'Spices', 'Yogurt'],
-  ['Potato Samosa', '150-250', '30-40', 'Flour', 'Oil', 'Potato', 'Spices']
-]
+let arrayOfRecipes = []; // Initialize an empty array to store recipes
 
+//Code to load the JSON file
+fetch('recipes.json')
+  .then(response => response.json())
+  .then(data => {
+    arrayOfRecipes = data; // Update the arrayOfRecipes with the loaded data
+
+  })
+  .catch(error => {
+    console.error('Failed to load the JSON file:', error);
+  });
 
 // Get references to all the checkboxes
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -36,22 +32,22 @@ checkboxes.forEach(checkbox => {
   });
 });
 
-
-function filterRecipes(arrayOfRecipes, sortedCheckedCheckboxNames) {
+//Defining a function to filter the recipes which can be made with the given ingredients
+function filterRecipes(arrayOfRecipes, CheckedCheckboxNames) {
   const matchingRecipes = [];
 
-  for (const recipe of arrayOfRecipes) {
-    const ingredients = new Set(recipe.slice(3));
+  for (const recipe of arrayOfRecipes) {                                  //read the first value from JSON file
+    const ingredients = new Set(recipe.ingredients);                      
 
-    if (isSubset(new Set(sortedCheckedCheckboxNames), ingredients)) {
-      matchingRecipes.push(recipe.slice(0, 3));
+    if (isSubset(new Set(CheckedCheckboxNames), ingredients)) {           //check if the the ingredients are present
+      matchingRecipes.push(recipe);
     }
   }
 
   return matchingRecipes;
 }
 
-function isSubset(setA, setB) {
+function isSubset(setA, setB) {                                             // funtion to check if it is a subset
   for (const item of setB) {
     if (!setA.has(item)) {
       return false;
@@ -61,23 +57,20 @@ function isSubset(setA, setB) {
 }
 
 
-findRecipesButton.addEventListener('click', () => {
-  const sortedCheckedCheckboxNames = Array.from(checkedCheckboxNames).sort();
+findRecipesButton.addEventListener('click', () => {                         // function for the "Find Recipies" Button
   
-  const matchingRecipes = filterRecipes(arrayOfRecipes, sortedCheckedCheckboxNames);
-  for (let i = 1; i <= 3; i++) {
+  const matchingRecipes = filterRecipes(arrayOfRecipes, checkedCheckboxNames);      
+  const matchingRecipesLength = matchingRecipes.length;
+  for (let i = 1; i <= 3; i++) {                                            // printing the first 3 matching recipies 
     const outpElement = document.getElementById('op' + i);
 
     if (outpElement) {
-      if (i <= matchingRecipes.length) {
-        const recipeData = matchingRecipes[i - 1][0];
-        const recipeCal = matchingRecipes[i - 1][1];
-        const recipeMin = matchingRecipes[i - 1][2];
-        outpElement.innerHTML = `${recipeData}<br>Calories: ${recipeCal} Cals<br>Cooking Time: ${recipeMin} Mins`;
+      if (i <= matchingRecipesLength) {
+        const recipe = matchingRecipes[i - 1];
+        outpElement.innerHTML = `${recipe.name}<br>Calories: ${recipe.calories} Cals<br>Cooking Time: ${recipe.cookingTime} Mins`;
       } else {
         outpElement.textContent = 'No More Recipes (T___T)';
       }
     }
   }
 });
-

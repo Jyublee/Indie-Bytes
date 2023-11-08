@@ -63,7 +63,7 @@
         "name": "Paneer Tikka",
         "calories": "200-250",
         "cookingTime": "20-30",
-        "ingredients": ["Paneer", "Spices", "Yogurt"]
+        "ingredients": ["Paneer", "Spices", "Yogurt", "Onion"]
     },
     {
         "name": "Potato Chaat",
@@ -106,5 +106,53 @@
         "calories": "100-125",
         "cookingTime": "5-10",
         "ingredients": ["Paneer", "Oil", "Spices"]
+    },
+    {
+        "name": "Pyaaz Pakora",
+        "calories": "75-100",
+        "cookingTime": "15-20",
+        "ingredients": ["Oil", "Onion", "Spices", "Flour"]
+    },
+    {
+        "name": "Potato Bhaji",
+        "calories": "100-150",
+        "cookingTime": "15-20",
+        "ingredients": ["Oil", "Potato", "Spices", "Onion"]
+    },
+    {
+        "name": "Aloo Paratha",
+        "calories": "200-250",
+        "cookingTime": "20-30",
+        "ingredients": ["Oil", "Potato", "Flour", "Spices"]
+    },
+    {
+        "name": "Paneer Tikka",
+        "calories": "150-200",
+        "cookingTime": "20-25",
+        "ingredients": ["Paneer", "Yogurt", "Spices", "Onion"]
+    },
+    {
+        "name": "Masala Dosa",
+        "calories": "150-200",
+        "cookingTime": "30-40",
+        "ingredients": ["Oil", "Potato", "Flour", "Spices"]
+    },
+    {
+        "name": "Aloo Chaat",
+        "calories": "100-150",
+        "cookingTime": "15-20",
+        "ingredients": ["Oil", "Potato", "Spices", "Yogurt", "Onion"]
+    },
+    {
+        "name": "Paneer Rolls",
+        "calories": "150-200",
+        "cookingTime": "20-25",
+        "ingredients": ["Paneer", "Flour", "Spices", "Onion"]
+    },
+    {
+        "name": "Onion Bhaji",
+        "calories": "75-100",
+        "cookingTime": "15-20",
+        "ingredients": ["Oil", "Onion", "Spices", "Flour"]
     }
 ]

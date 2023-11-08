@@ -109,3 +109,10 @@ body {
     font-size: 32px;
     background-color: #000000
 }
+
+.halfcontainer2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Adjust the gap size to your preference */
+  }

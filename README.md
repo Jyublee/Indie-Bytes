@@ -54,4 +54,4 @@ At Indie-Bytes, we're committed to continuous improvement. We'd love to hear you
 
 ---
 
-Enjoy your snacking with Indie-Bytes! Say goodbye to snack dilemmas and hello to delicious solutions.
+Enjoy Your snacking with Indie-Bytes! Say goodbye to snack dilemmas and hello to delicious solutions.
